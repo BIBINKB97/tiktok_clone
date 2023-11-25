@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tiktok_clone/constants/colors.dart';
-import 'package:tiktok_clone/views/home.dart';
+import 'package:tiktok_clone/views/screens/auth/login_sreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
       ),
-      home: HomePage(),
+      home: LoginScreen(),
     );
   }
 }
