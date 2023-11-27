@@ -10,7 +10,7 @@ class TextInputField extends StatelessWidget {
       {super.key,
       required this.controller,
       required this.labelText,
-      required this.isObscure,
+      this.isObscure = false,
       required this.icon});
 
   @override
