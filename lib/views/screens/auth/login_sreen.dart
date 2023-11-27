@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
               color: buttonColor,
               fontWeight: FontWeight.w400,
             ),
-          ),
+          ), 
           Text(
             'Login',
             style: TextStyle(
