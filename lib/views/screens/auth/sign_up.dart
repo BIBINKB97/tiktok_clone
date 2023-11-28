@@ -26,7 +26,7 @@ class SignUpScreen extends StatelessWidget {
             ),
           ),
           Text(
-            'Login',
+            'Register',
             style: TextStyle(
               fontSize: 25,
               fontWeight: FontWeight.w700,
@@ -68,7 +68,7 @@ class SignUpScreen extends StatelessWidget {
               onTap: () {},
               child: Center(
                   child: Text(
-                'Login',
+                'Register',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
               )),
             ),
@@ -79,13 +79,13 @@ class SignUpScreen extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('dont have an account ?  ',
+              Text('Already have an account ?  ',
                   style: TextStyle(
                     fontSize: 20,
                   )),
               InkWell(
                 onTap: () {},
-                child: Text('Register',
+                child: Text('Login',
                     style: TextStyle(
                       color: buttonColor,
                       fontSize: 20,
