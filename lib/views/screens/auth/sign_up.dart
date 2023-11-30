@@ -7,6 +7,7 @@ class SignUpScreen extends StatelessWidget {
 
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
+  final TextEditingController usernameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +34,37 @@ class SignUpScreen extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 25,
+            height: 20,
+          ),
+          Stack(
+            children: [
+              CircleAvatar(
+                radius: 60,
+                backgroundImage: AssetImage('assets/images/user.png'),
+              ),
+              Positioned(
+                bottom: 0,
+                right: 0,
+                child: CircleAvatar(
+                    backgroundColor: Colors.grey,
+                    radius: 20,
+                    child: Icon(Icons.add_photo_alternate)),
+              )
+            ],
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+              width: MediaQuery.of(context).size.width,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              child: TextInputField(
+                controller: usernameController,
+                icon: Icons.person,
+                labelText: 'Username',
+              )),
+          SizedBox(
+            height: 20,
           ),
           Container(
               width: MediaQuery.of(context).size.width,
@@ -44,7 +75,7 @@ class SignUpScreen extends StatelessWidget {
                 labelText: 'Email',
               )),
           SizedBox(
-            height: 25,
+            height: 20,
           ),
           Container(
               width: MediaQuery.of(context).size.width,

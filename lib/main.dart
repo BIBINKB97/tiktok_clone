@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tiktok_clone/constants/colors.dart';
-import 'package:tiktok_clone/views/screens/auth/login_sreen.dart';
 import 'package:tiktok_clone/views/screens/auth/sign_up.dart';
 
 void main() {
