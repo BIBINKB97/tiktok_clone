@@ -17,7 +17,7 @@ class LoginScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'TikTok',
+            'BeatBox',
             style: TextStyle(
               letterSpacing: 2,
               fontSize: 35,

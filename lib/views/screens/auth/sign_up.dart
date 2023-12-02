@@ -18,7 +18,7 @@ class SignUpScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'TikTok',
+            'BeatBox',
             style: TextStyle(
               letterSpacing: 2,
               fontSize: 35,
@@ -37,7 +37,7 @@ class SignUpScreen extends StatelessWidget {
             height: 20,
           ),
           Stack(
-            children: [
+            children: const [
               CircleAvatar(
                 radius: 60,
                 backgroundImage: AssetImage('assets/images/user.png'),
@@ -48,8 +48,11 @@ class SignUpScreen extends StatelessWidget {
                 child: CircleAvatar(
                     backgroundColor: Colors.grey,
                     radius: 20,
-                    child: Icon(Icons.add_photo_alternate)),
-              )
+                    child: Icon(
+                      Icons.add_a_photo,
+                      color: Colors.black,
+                    )),
+              ),
             ],
           ),
           SizedBox(
@@ -123,7 +126,7 @@ class SignUpScreen extends StatelessWidget {
                     )),
               ),
             ],
-          )
+          ),
         ],
       ),
     ));
